@@ -1,0 +1,165 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Watermark */
+.intro {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0.5;
+}
+
+.intro a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.intro a:hover {
+    color: #00ffcc;
+    opacity: 1;
+}
+
+/* Buttons */
+#btns {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+#btns button {
+    background: #222;
+    color: #ffffff;
+    border: 2px solid #00ffcc;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#btns button:hover {
+    background: #00ffcc;
+    color: #0d0d0d;
+}
+
+/* Career Description */
+.careerdesc {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #00ffcc;
+    margin-top: 50px;
+}
+
+/* Profile Picture */
+.pic {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pic img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #00ffcc;
+    object-fit: cover;
+}
+
+/* Icons */
+.icon img {
+    margin: 10px 0;
+    width: 50px;
+}
+
+/* About Section */
+.about {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Services Section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: solid #00ffcc 2px;
+}
+
+.services div {
+    padding: 20px;
+    border: solid #00ffcc 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .pic img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .careerdesc {
+        font-size: 28px;
+    }
+
+    .pic img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .services {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #btns {
+        flex-direction: column;
+    }
+
+    .careerdesc {
+        font-size: 24px;
+    }
+
+    .pic img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+}

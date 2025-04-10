@@ -1,0 +1,147 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Watermark - Code by Tharusha */
+.intro {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0.5;
+}
+
+.intro a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.intro a:hover {
+    color: #00ffcc;
+    opacity: 1;
+}
+
+/* Navigation Buttons */
+#btns {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+#btns button {
+    background: #222;
+    color: #ffffff;
+    border: 2px solid #00ffcc;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#btns button:hover {
+    background: #00ffcc;
+    color: #0d0d0d;
+}
+
+/* Projects Section */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+#projects a {
+    display: block;
+    width: 400px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.4s ease-in-out;
+    border: 2px solid transparent;
+}
+
+#projects a:hover {
+    border-color: #00ffcc;
+    transform: scale(1.05);
+}
+
+#projects img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+#projects a:hover img {
+    filter: brightness(80%);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #projects {
+        gap: 20px;
+    }
+
+    #projects a {
+        width: 350px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 768px) {
+    #btns {
+        flex-direction: column;
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #projects a {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects a {
+        width: 100%;
+    }
+
+    #btns {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #btns button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
