@@ -85,6 +85,7 @@ body {
     border-radius: 50%;
     border: 3px solid #00ffcc;
     object-fit: cover;
+
 }
 
 /* Icons */
@@ -121,6 +122,15 @@ body {
 .services div {
     padding: 20px;
     border: solid #00ffcc 1px;
+}
+footer {
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /* Responsive Design */
