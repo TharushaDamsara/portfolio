@@ -101,6 +101,11 @@ body {
     font-size: 18px;
     line-height: 1.6;
 }
+ #profetionLbl{
+    width: 50px;
+     background: blue;
+     border: solid black;
+ }
 
 /* Services Section */
 .services {
