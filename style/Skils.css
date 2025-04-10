@@ -23,7 +23,30 @@
     color: #00ffcc;
     opacity: 1;
 }
+/* Buttons */
+#btns {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
 
+#btns button {
+    background: #222;
+    color: #ffffff;
+    border: 2px solid #00ffcc;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#btns button:hover {
+    background: #00ffcc;
+    color: #0d0d0d;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
