@@ -10,8 +10,8 @@
 }
 
 body {
-    background-color: #0d0d0d;
-    color: #f0f0f0;
+    background-color: #0d0d0d; /* Dark background */
+    color: #f0f0f0; /* Light text */
     text-align: center;
     padding: 20px;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 .intro a:hover {
-    color: #00ffcc;
+    color: #00ffcc; /* Vibrant accent color */
     opacity: 1;
 }
 
@@ -47,9 +47,9 @@ body {
 }
 
 #btns button {
-    background: #222;
-    color: #ffffff;
-    border: 2px solid #00ffcc;
+    background: #222; /* Dark background for buttons */
+    color: #ffffff; /* Light text for buttons */
+    border: 2px solid #00ffcc; /* Accent border color */
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 8px;
@@ -58,8 +58,8 @@ body {
 }
 
 #btns button:hover {
-    background: #00ffcc;
-    color: #0d0d0d;
+    background: #00ffcc; /* Accent color on hover */
+    color: #0d0d0d; /* Dark background on hover */
 }
 
 /* Projects Section */
@@ -82,7 +82,7 @@ body {
 }
 
 #projects a:hover {
-    border-color: #00ffcc;
+    border-color: #00ffcc; /* Accent border on hover */
     transform: scale(1.05);
 }
 
@@ -95,10 +95,12 @@ body {
 }
 
 #projects a:hover img {
-    filter: brightness(80%);
+    filter: brightness(80%); /* Darken image on hover */
 }
 
 /* Responsive Design */
+
+/* For Tablet and Smaller Screens (max-width: 1024px) */
 @media (max-width: 1024px) {
     #projects {
         gap: 20px;
@@ -108,17 +110,14 @@ body {
         width: 350px;
         height: 330px;
     }
-}
-footer {
-    background-color: #212529;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 2rem;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+
+    #btns button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
 }
 
+/* For Tablets (max-width: 768px) */
 @media (max-width: 768px) {
     #btns {
         flex-direction: column;
@@ -131,16 +130,23 @@ footer {
         width: 90%;
         height: auto;
     }
+
+    #projects {
+        gap: 15px;
+    }
 }
 
+/* For Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
     #projects {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
     #projects a {
         width: 100%;
+        height: auto;
     }
 
     #btns {
@@ -153,4 +159,19 @@ footer {
         font-size: 14px;
         padding: 8px 15px;
     }
+
+    .intro a {
+        font-size: 14px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #212529; /* Dark footer background */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }

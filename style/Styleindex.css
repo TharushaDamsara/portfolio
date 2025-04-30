@@ -55,6 +55,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
 #name {
@@ -69,7 +70,8 @@ body {
     height: auto;
     animation: fadeIn 1.5s ease-in-out;
 }
-#locationlabel{
+
+#locationlabel {
     height: 100px;
     width: 250px;
     left: 0;
@@ -80,22 +82,20 @@ body {
     text-align: center;
 }
 
-#locationlabelt>label>text{
-  text-align: center;
+#locationlabelt > label > text {
+    text-align: center;
 }
-#image2{
+
+#image2 {
     color: darkblue;
     top: 0;
     bottom: 0;
-    right:0;
+    right: 0;
     margin: auto;
     position: absolute;
     height: 50px;
     width: 50px;
-   border-radius: 100%;
-
-
-
+    border-radius: 100%;
 }
 
 /* Profession Label */
@@ -106,7 +106,6 @@ body {
     right: 15%;
     top: 50%;
     position: absolute;
-
 }
 
 /* About Section */
@@ -138,6 +137,7 @@ body {
 
 #projects {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
@@ -211,24 +211,54 @@ footer {
     }
 }
 
-/* Responsive Design */
+/* Media Queries - FULL Responsive */
+
+/* Mobile Small (320px) */
+@media (max-width: 320px) {
+    #name { font-size: 20px; }
+    #profetionLbl { font-size: 12px; right: 10%; }
+    #btns button { padding: 6px 12px; font-size: 10px; }
+    #image img { max-width: 70%; }
+    #locationlabel { width: 150px; height: 50px; }
+    .carreerdesc { font-size: 16px; }
+    .cpara p { font-size: 12px; }
+    #projects a img { width: 80%; }
+}
+
+/* Mobile Medium (375px) */
+@media (max-width: 375px) {
+    #name { font-size: 24px; }
+    #profetionLbl { font-size: 14px; right: 10%; }
+    #btns button { padding: 8px 14px; font-size: 12px; }
+    #image img { max-width: 75%; }
+    #locationlabel { width: 170px; height: 60px; }
+    .carreerdesc { font-size: 18px; }
+    .cpara p { font-size: 14px; }
+    #projects a img { width: 85%; }
+}
+
+/* Mobile Large (425px) */
+@media (max-width: 425px) {
+    #name { font-size: 28px; }
+    #profetionLbl { font-size: 16px; right: 10%; }
+    #btns button { padding: 10px 16px; font-size: 14px; }
+    #projects { flex-direction: column; }
+}
+
+/* Tablet (768px) */
 @media (max-width: 768px) {
-    #name {
-        font-size: 36px;
-    }
-
-    #image img {
-        max-width: 60%;
-    }
-
-    #projects {
-        flex-direction: column;
-    }
+    #name { font-size: 32px; }
+    #profetionLbl { font-size: 18px; }
+    #projects a img { width: 80%; }
 }
 
-@media screen and (max-width: 720px) {
-    .home-header .row {
-        justify-content: flex-start;
-    }
+/* Laptop (1024px) */
+@media (max-width: 1024px) {
+    #name { font-size: 36px; }
+    #projects a img { width: 300px; }
 }
 
+/* Laptop Large (1440px) */
+@media (max-width: 1440px) {
+    #projects a img { width: 350px; }
+}
