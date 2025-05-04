@@ -130,108 +130,151 @@ footer {
     border-top-right-radius: 20px;
 }
 
-/* Responsive Design */
+/* Responsive Design*/
 
-/* For Tablet and Smaller Screens (max-width: 1024px) */
-@media (max-width: 1024px) {
-    #projects {
-        gap: 20px;
-    }
+/*!* For Tablet and Smaller Screens (max-width: 1024px) *!*/
+/*@media (max-width: 1024px) {*/
+/*    #projects {*/
+/*        gap: 20px;*/
+/*    }*/
 
-    #projects a {
-        width: 350px;
-        height: 330px;
-    }
+/*    #projects a {*/
+/*        width: 350px;*/
+/*        height: 330px;*/
+/*    }*/
 
-    #btns button {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
+/*    #btns button {*/
+/*        font-size: 14px;*/
+/*        padding: 8px 15px;*/
+/*    }*/
 
-    header h1 {
-        font-size: 2rem;
-    }
+/*    header h1 {*/
+/*        font-size: 2rem;*/
+/*    }*/
 
-    section h2 {
-        font-size: 1.5rem;
-    }
+/*    section h2 {*/
+/*        font-size: 1.5rem;*/
+/*    }*/
 
-    .about p {
-        font-size: 1rem;
-    }
+/*    .about p {*/
+/*        font-size: 1rem;*/
+/*    }*/
 
-    .skill {
-        padding: 0.8rem;
-        font-size: 0.9rem;
-    }
+/*    .skill {*/
+/*        padding: 0.8rem;*/
+/*        font-size: 0.9rem;*/
+/*    }*/
+/*}*/
+
+/*!* For Tablets (max-width: 768px) *!*/
+/*@media (max-width: 768px) {*/
+/*    #btns {*/
+/*        flex-direction: column;*/
+/*        position: static;*/
+/*        text-align: center;*/
+/*        margin-top: 20px;*/
+/*    }*/
+
+/*    header h1 {*/
+/*        font-size: 1.8rem;*/
+/*    }*/
+
+/*    section h2 {*/
+/*        font-size: 1.3rem;*/
+/*    }*/
+
+/*    .about p {*/
+/*        font-size: 0.95rem;*/
+/*    }*/
+
+/*    .skills-grid {*/
+/*        gap: 1rem;*/
+/*    }*/
+
+/*    .skill {*/
+/*        font-size: 0.9rem;*/
+/*    }*/
+/*}*/
+
+/*!* For Mobile Devices (max-width: 480px) *!*/
+/*@media (max-width: 480px) {*/
+/*    #btns {*/
+/*        flex-direction: row;*/
+/*        justify-content: center;*/
+/*        gap: 10px;*/
+/*    }*/
+
+/*    #btns button {*/
+/*        font-size: 12px;*/
+/*        padding: 8px 12px;*/
+/*    }*/
+
+/*    header h1 {*/
+/*        font-size: 1.5rem;*/
+/*    }*/
+
+/*    section h2 {*/
+/*        font-size: 1.2rem;*/
+/*    }*/
+
+/*    .about p {*/
+/*        font-size: 0.9rem;*/
+/*    }*/
+
+/*    .skills-grid {*/
+/*        grid-template-columns: 1fr;*/
+/*    }*/
+
+/*    .skill {*/
+/*        padding: 0.5rem;*/
+/*        font-size: 0.85rem;*/
+/*    }*/
+
+/*    footer {*/
+/*        font-size: 0.85rem;*/
+/*        padding: 1.5rem 0;*/
+/*    }*/
+/*}*/
+
+
+/* Mobile Small (320px) */
+@media (max-width: 320px) {
+    #btns {flex-direction: row;justify-content: center;gap: 10px;top: 0.5%;right: 0.5%;}
+    #btns button {font-size: 12px;padding: 8px 12px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 12px;}
+
 }
 
-/* For Tablets (max-width: 768px) */
+/* Mobile Medium (375px) */
+
+@media (max-width: 375px) {
+    #btns {flex-direction: row;justify-content: center;gap: 10px;top: 0.5%;right: 0.5%;}
+    #btns button {font-size: 13px;padding: 8px 12px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 12px;}
+}
+
+/* Mobile Large (425px) */
+
+@media (max-width: 490px) {
+    #btns {flex-direction: row;justify-content: center;gap: 10px;top: 0.5%;right: 0.5%;}
+    #btns button {font-size: 15px;padding: 8px 12px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 16px;}
+}
+
+/* Tablet (768px) */
 @media (max-width: 768px) {
-    #btns {
-        flex-direction: column;
-        position: static;
-        text-align: center;
-        margin-top: 20px;
-    }
 
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    section h2 {
-        font-size: 1.3rem;
-    }
-
-    .about p {
-        font-size: 0.95rem;
-    }
-
-    .skills-grid {
-        gap: 1rem;
-    }
-
-    .skill {
-        font-size: 0.9rem;
-    }
 }
 
-/* For Mobile Devices (max-width: 480px) */
-@media (max-width: 480px) {
-    #btns {
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-    }
+/* Laptop (1024px) */
+@media (max-width: 1024px) {
 
-    #btns button {
-        font-size: 12px;
-        padding: 8px 12px;
-    }
+}
 
-    header h1 {
-        font-size: 1.5rem;
-    }
+/* Laptop Large (1440px) */
+@media (max-width: 1440px) {
 
-    section h2 {
-        font-size: 1.2rem;
-    }
-
-    .about p {
-        font-size: 0.9rem;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skill {
-        padding: 0.5rem;
-        font-size: 0.85rem;
-    }
-
-    footer {
-        font-size: 0.85rem;
-        padding: 1.5rem 0;
-    }
 }

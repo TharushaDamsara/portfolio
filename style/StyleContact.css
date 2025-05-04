@@ -181,43 +181,52 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .contact {
-        width: 90%;
-    }
-
-    .social-links {
-        flex-direction: column;
-    }
-
-    .social-links a {
-        padding: 10px;
-    }
+@media (max-width: 320px) {
+    .contact {width: 90%;}
+    .social-links {flex-direction: column;}
+    .social-links a {padding: 10px;}
+    .contact-info p {font-size: 11px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 12px;}
+    .top-buttons button {font-size: 12px;}
+    .top-buttons {top: 0.5%;right: 0.5%}
 }
 
-@media (max-width: 480px) {
-    .top-buttons {
-        top: 10px;
-        right: 10px;
-        gap: 10px;
-    }
+@media (max-width: 375px) {
+    .contact {width: 90%;}
+    .social-links {flex-direction: column;}
+    .social-links a {padding: 10px;}
+    .contact-info p {font-size: 20px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 12px;}
+    .top-buttons button {font-size: 12px;}
+    .top-buttons {top: 0.5%;right: 0.5%}
+}
 
-    .top-buttons button {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
+/* Mobile Large (425px) */
 
-    .contact {
-        width: 95%;
-        padding: 20px;
-    }
+@media (max-width: 425px) {
 
-    .contact h2 {
-        font-size: 24px;
-    }
+    .social-links {flex-direction: column;}
+    .social-links a {padding: 10px;}
+    .contact-info p {font-size: 20px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 12px;}
+    .top-buttons button {font-size: 12px;}
+    .top-buttons {top: 0.5%;right: 0.5%}
+}
 
-    .social-links {
-        flex-direction: column;
-        gap: 5px;
-    }
+/* Tablet (768px) */
+@media (max-width: 768px) {
+
+}
+
+/* Laptop (1024px) */
+@media (max-width: 1024px) {
+
+}
+
+/* Laptop Large (1440px) */
+@media (max-width: 1440px) {
+
 }
