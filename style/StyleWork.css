@@ -81,6 +81,7 @@ body {
     border: 2px solid transparent;
 }
 
+
 #projects a:hover {
     border-color: #00ffcc; /* Accent border on hover */
     transform: scale(1.05);
@@ -98,72 +99,7 @@ body {
     filter: brightness(80%); /* Darken image on hover */
 }
 
-/* Responsive Design */
 
-/* For Tablet and Smaller Screens (max-width: 1024px) */
-@media (max-width: 1024px) {
-    #projects {
-        gap: 20px;
-    }
-
-    #projects a {
-        width: 350px;
-        height: 330px;
-    }
-
-    #btns button {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-}
-
-/* For Tablets (max-width: 768px) */
-@media (max-width: 768px) {
-    #btns {
-        flex-direction: column;
-        position: static;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    #projects a {
-        width: 90%;
-        height: auto;
-    }
-
-    #projects {
-        gap: 15px;
-    }
-}
-
-/* For Mobile Devices (max-width: 480px) */
-@media (max-width: 480px) {
-    #projects {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    #projects a {
-        width: 100%;
-        height: auto;
-    }
-
-    #btns {
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    #btns button {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-
-    .intro a {
-        font-size: 14px;
-    }
-}
 
 /* Footer */
 footer {
@@ -174,4 +110,47 @@ footer {
     margin-top: 2rem;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+@media (max-width: 320px) {
+    #btns {flex-direction: row;justify-content: center;gap: 10px;top: 0.5%;right: 0.5%;}
+    #btns button {font-size: 12px;padding: 8px 12px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 12px;}
+    #projects img{width: 80%}
+
+}
+
+/* Mobile Medium (375px) */
+
+@media (max-width: 375px) {
+    #btns {flex-direction: row;justify-content: center;gap: 10px;top: 0.5%;right: 0.5%;}
+    #btns button {font-size: 12px;padding: 8px 12px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 15px;}
+    #projects img{width: 100%}
+}
+
+/* Mobile Large (425px) */
+
+@media (max-width: 490px) {
+    #btns {flex-direction: row;justify-content: center;gap: 10px;top: 0.5%;right: 0.5%;}
+    #btns button {font-size: 12px;padding: 8px 12px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 15px;}
+    #projects img{width: 100%}
+}
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+
+}
+
+/* Laptop (1024px) */
+@media (max-width: 1024px) {
+
+}
+
+/* Laptop Large (1440px) */
+@media (max-width: 1440px) {
+
 }

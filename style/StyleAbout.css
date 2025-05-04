@@ -135,21 +135,34 @@ footer {
 
 /* Mobile Small (320px) */
 @media (max-width: 320px) {
-
+    #btns {flex-direction: row;justify-content: center;gap: 10px;top: 0.5%;right: 0.5%;}
+    #btns button {font-size: 12px;padding: 8px 12px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 12px;}
+    .services  {grid-template-columns: repeat(1,2fr);}
 
 }
 
 /* Mobile Medium (375px) */
 
 @media (max-width: 375px) {
-
+    #btns {flex-direction: row;justify-content: center;gap: 10px;top: 0.5%;right: 0.5%;}
+    #btns button {font-size: 12px;padding: 8px 12px;}
+    .intro {position: absolute;top: 50px;left: 10px;}
+    .intro a {font-size: 12px;}
+    .services  {grid-template-columns: repeat(1,2fr);}
 }
 
 /* Mobile Large (425px) */
 
-@media (max-width: 425px) {
-
+@media (max-width: 530px) {
+    #btns {flex-direction: row;justify-content: center;gap: 10px;top: 0.5%;right: 0.5%;}
+    #btns button {font-size: 15px;padding: 8px 12px;}
+    .intro {position: absolute;top: 30px;left: 10px;}
+    .intro a {font-size: 16px;}
+    .services  {grid-template-columns: repeat(1,2fr);}
 }
+
 
 /* Tablet (768px) */
 @media (max-width: 768px) {
